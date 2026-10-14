@@ -14,9 +14,30 @@
         android:text="Start timer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintTop_toTopOf="@id/btnStart"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart"
+        app:layout_constraintStart_toEndOf="@id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etSeconds"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Seconds"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/tvTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/tvTimer"
